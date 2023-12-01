@@ -1,0 +1,28 @@
+{
+  "name": "@gml/queue-service-example-utilities",
+  "version": "1.0.0",
+  "description": "Utilities package for the queue service example.",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": {
+    "name": "Gaming Mechanics",
+    "email": "support@gamingmechanics.com"
+  },
+  "repository": "github:GamingMechanics/queue-service-example",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^4.6.11"
+  }
+}

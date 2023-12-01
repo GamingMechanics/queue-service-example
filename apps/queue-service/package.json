@@ -1,0 +1,46 @@
+{
+  "name": "@gml/queue-service",
+  "version": "1.0.0",
+  "description": "A configurable worker that processes jobs in the queues.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "prebuild": "npm run build -w @gml/queue-service-example-utilities",
+    "build": "swc src -d dist --source-maps --copy-files",
+    "prebuild:tsc": "npm run build -w @gml/queue-service-example-utilities",
+    "build:tsc": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": {
+    "name": "Gaming Mechanics",
+    "email": "support@gamingmechanics.com"
+  },
+  "repository": "github:GamingMechanics/queue-service-example",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@swc/cli": "^0.1.63",
+    "@swc/core": "^1.3.100",
+    "@types/bull-arena": "^3.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@gml/queue-service-example-utilities": "^1.0.0",
+    "bee-queue": "^1.7.1",
+    "bull-arena": "^4.1.0",
+    "dotenv": "^16.3.1",
+    "redis": "^4.6.11"
+  },
+  "engines": {
+    "node": ">=18.17.1"
+  }
+}

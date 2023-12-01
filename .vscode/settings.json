@@ -1,0 +1,29 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  "prettier.prettierPath": "./node_modules/prettier",
+  "prettier.printWidth": 100,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "cSpell.words": ["athena", "Firestore", "tailwindcss"],
+  "cSpell.language": "en-GB",
+  "gml.keybindings": true,
+  "cmake.configureOnOpen": false,
+  "eslint.workingDirectories": [
+    {
+      "pattern": "apps/*"
+    },
+    {
+      "pattern": "packages/*"
+    }
+  ]
+}

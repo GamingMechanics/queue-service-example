@@ -1,0 +1,32 @@
+#System Files
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Environment configuration
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# Build folder
+dist/
+
+# Downloadable modules
+node_modules/
+
+# Test stuff
+test-results/
+playwright-report/
+playwright/.cache/
+build-storybook.log
+storybook-static/
+
+# NPM logs
+npm-debug.log*
+debug.log*
+
+# TS build info
+tsconfig.tsbuildinfo

@@ -1,0 +1,30 @@
+{
+  "name": "@gml/queue-service-example",
+  "version": "1.0.0",
+  "description": "An example of a queue service implemented with bee-queue.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run build -w @gml/queue-service-example-utilities",
+    "dev": "concurrently -c auto -n SERVICE,BACKEND \"npm run dev -w @gml/queue-service\" \"npm run dev -w @gml/queue-service-example-backend\"",
+    "build": "concurrently -c auto -n SERVICE,BACKEND \"npm run build -w @gml/queue-service\" \"npm run build -w @gml/queue-service-example-backend\"",
+    "start": "concurrently -c auto -n SERVICE,BACKEND \"npm run start -w @gml/queue-service\" \"npm run start -w @gml/queue-service-example-backend\""
+  },
+  "author": {
+    "name": "Gaming Mechanics",
+    "email": "support@gamingmechanics.com"
+  },
+  "repository": "github:GamingMechanics/queue-service-example",
+  "license": "MIT",
+  "workspaces": [
+    "apps/queue-service",
+    "apps/backend",
+    "packages/utilities"
+  ],
+  "private": true,
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
